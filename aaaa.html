@@ -16,16 +16,7 @@
 
 <head>
     <title>Script HTML buat Kamu</title>
-    <!-- 
-  Made with love by Rayys!
   
-     Blog: https://PalingIT.com
-     Instagram: @rayyarrr
-     TikTok: @rayy4r
-     Email: rayyar0703@gmail.com
-     
-  Thanks to all <3
--->
 </head>
 <style>
     :root {
@@ -75,13 +66,14 @@
     }
 
     body::before {
-        content: "\00A9  Rayys | PalingIT";
+        content: "\00A9 by KAPLT ";
         color: white;
-        opacity: .12;
-        font-size: 10px;
+        opacity: .10;
+        font-size: 12px;
         position: fixed;
         bottom: 25px;
         right: 25px;
+        text-align: center;
         z-index: 2
     }
 
@@ -571,7 +563,7 @@
         -webkit-backdrop-filter: blur(2px);
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 8px;
-        max-width: 330px;
+        max-width: 430px;
         top: -60px;
     }
 
@@ -670,7 +662,7 @@
     <!-- Ganti Audio di sini -->
     <!-- <audio src="https://feeldreams.github.io/vibescorona.mp3" id="linkmp3" class="sembunyi"></audio> -->
     <audio src="https://falconed11.github.io/y2mate.MP3" id="linkmp3" class="sembunyi"></audio>
-    
+
 
     <div id="bodyblur">
         <!-- Wallpaper --><img src="https://falconed11.github.io/crgi.jpg" id="wallpaper" />
@@ -686,7 +678,7 @@
 
         <div class="kumpulanstiker">
             <!-- Stiker untuk Konten -->
-            <img src="https://feeldreams.github.io/emawh.gif" id="fotostiker" />
+            <img src="https://feeldreams.github.io/pandacoklat.gif" id="fotostiker" />
 
             <img src="https://feeldreams.github.io/bunga.gif" id="fotostiker1" />
             <img src="https://feeldreams.github.io/ngumpet.gif" id="fotostiker2" />
@@ -701,8 +693,8 @@
 
         <div>
             <blockquote id='bq' data-text='&#9829;'>
-                <p id="kalimat">Yeaayy! Akhirnya kita jalan 🤣</p>
-                <p id="kalimatb">Balas pesan ke WhatsApp aku ya! 👉🏻👈🏻</p>
+                <p id="kalimat">Yashhh !! tenan yo ra,no fafifu 😜</p>
+                <p id="kalimatb">Balas pesan ke WhatsApp ku yashh! 👉🏻👈🏻</p>
             </blockquote>
         </div>
 
@@ -711,21 +703,22 @@
 
     </div>
 
+
+
     <!-- Jangan Edit Bagian Ini -->
     <script>
+
         async function inipesan() {
             var { value: nama } = await swals.fire({
-                /* title: 'Masukin Nama Bapakmu', input: 'text', */
-                title: 'Masukin Nama Bapakmu',
+
+                title: 'Bener ini mbak Angela Selmi Gusniar yang galak itu kan ? 😋✌️',
             });
-            if (nama && nama.length < 11) {
-                window.nama = nama;
-                await swalst.fire({ title: 'Hai, ' + nama + '! ❤️', imageUrl: '' + fotostiker1.src, });
-                await swalst.fire({ title: 'Minta Waktunya Sebentar ya!', imageUrl: '' + fotostiker2.src, });
-                pilihwarna();
-            } else {
-                await swals.fire('Ups!', 'Nama tidak boleh kosong atau lebih dari 10 karakter, ya!'); inipesan();
-            }
+
+            window.nama = 'Niar';
+            await swalst.fire({ title: 'Hai, mbak Niar! 😅', imageUrl: '' + fotostiker1.src, });
+            await swalst.fire({ title: 'Minta Waktunya Sebentar ya!✌️', imageUrl: '' + fotostiker2.src, });
+            pilihwarna();
+
         }
 
         async function pilihwarna() {
@@ -734,46 +727,49 @@
             var iniwarna2 = "Merah";
 
             var { isConfirmed: warna } = await swals.fire({
-                title: nama + ' mau pilih warna apa nih?',
-                text: 'Ayo, jangan ragu-ragu 😆',
+                title: nama + ' pilih warna apa?',
+                text: 'Ayo, cepettt!! 😆',
                 imageUrl: '' + fotostiker3.src,
                 showCancelButton: true,
                 confirmButtonText: '' + iniwarna1,
                 cancelButtonText: '' + iniwarna2,
             });
             if (warna) {
-                await swals.fire({ title: 'Yeayy!', text: 'Kalo kamu pilih ' + iniwarna1 + ' berarti besok kita jalan ya 🤣!', imageUrl: '' + fotostiker4.src, });
+                await swals.fire({ title: 'Yashhh!', text: 'Nek pilih ' + iniwarna1 + ' berarti kancani aku dolan ya 🤣!', imageUrl: '' + fotostiker4.src, });
                 var { isConfirmed: warna2 } = await swals.fire({
-                    title: nama + ' yakin pilih warna ' + iniwarna1 + '?',
-                    text: 'Atau mau ganti warna aja nih?',
+                    title: 'Yakin pilih warna ' + iniwarna1 + '?',
+                    text: 'Opo meh ganti warna kih?',
                     imageUrl: '' + fotostiker5.src,
                     showCancelButton: true,
                     confirmButtonText: 'Yakin',
                     cancelButtonText: 'Ganti',
                 });
                 if (warna2) {
-                    await swals.fire({ title: 'Oke!', text: 'Sekarang lihat ini ya 😄❤️', imageUrl: '' + fotostiker6.src, });
+                    await swals.fire({ title: 'Oke!', text: 'yawis berarti deall kan yaa 🤭', imageUrl: '' + fotostiker6.src, });
+                    
                     mulainama();
+
                 } else {
-                    await swals.fire({ title: 'Oke, memilih ' + iniwarna2 + '!', text: 'Sama aja sih sebenernya, tapi jalannya harus lebih lama ya 😜', imageUrl: '' + fotostiker7.src, });
+                    await swals.fire({ title: 'Oke, memilih ' + iniwarna2 + '!', text: 'Podo wae sih sebenere, tapi dolane luwih sui ya 😜😜', imageUrl: '' + fotostiker7.src, });
                     mulainama();
                 }
                 //Selingan
             } else {
-                await swals.fire({ title: 'Yeayy!', text: 'Kalo kamu pilih ' + iniwarna2 + ' berarti besok kita jalan ya 🤣!', imageUrl: '' + fotostiker4.src, });
+                await swals.fire({ title: 'Yashhh!', text: 'Nek pilih ' + iniwarna2 + ' berarti kancani aku dolan ya 🤣!!', imageUrl: '' + fotostiker4.src, });
                 var { isConfirmed: warna2 } = await swals.fire({
-                    title: nama + ' yakin pilih warna ' + iniwarna2 + '?',
-                    text: 'Atau mau ganti warna aja nih?',
+                    title: 'Yakin pilih warna ' + iniwarna2 + '?',
+                    text: 'Opo meh ganti warna kih?',
                     imageUrl: '' + fotostiker5.src,
                     showCancelButton: true,
                     confirmButtonText: 'Ganti',
                     cancelButtonText: 'Yakin',
                 });
                 if (warna2) {
-                    await swals.fire({ title: 'Oke, memilih ' + iniwarna1 + '!', text: 'Sama aja sih sebenernya, tapi jalannya harus lebih lama ya 😜', imageUrl: '' + fotostiker7.src, });
+                    await swals.fire({ title: 'Oke, memilih ' + iniwarna1 + '!', text: 'Podo wae sih sebenere, tapi dolane luwih sui ya 😜😜', imageUrl: '' + fotostiker7.src, });
                     mulainama();
                 } else {
-                    await swals.fire({ title: 'Oke!', text: 'Sekarang lihat ini ya 😄❤️', imageUrl: '' + fotostiker6.src, });
+                    await swals.fire({ title: 'Oke!', text: 'yawis berarti deall kan yaa 🤭', imageUrl: '' + fotostiker6.src, });
+                    
                     mulainama();
                 }
             }
@@ -818,7 +814,7 @@
 
         function tombol() { wallpaper.style = "transform: scale(1);"; Tombol.style = "opacity:1;transform: scale(1);"; fungsi = 1 }
         document.getElementById("By").onclick = function () { if (fungsi == 1) { menuju(); } }
-        async function menuju() { pesanwhatsapp = "Iyaa " + "*" + nama + "*" + " mau kok kita jalan! ><"; await swals.fire('OK!', 'Kirim pesan ke WhatsApp aku, ya!', 'success'); window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp; }
+        async function menuju() { pesanwhatsapp = "Okey,bell Yok GASSSSSSS!! 🤟🤟"; await swals.fire('OK!', 'Kirim pesan ke WhatsApp aku, ya!', 'success'); window.location = "https://api.whatsapp.com/send?phone=6285803652743&text=" + pesanwhatsapp; }
 
         vketik1 = kalimat.innerHTML; kalimat.innerHTML = "";
         function mulaiketik1() {
